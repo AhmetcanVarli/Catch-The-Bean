@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E43408"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="363dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="125dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/etlikurufasulye"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/zorButton"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:onClick="zor"
+        android:text="ZOR"
+        android:background="@drawable/buton_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ortaButton" />
+
+    <Button
+        android:id="@+id/ortaButton"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buton_design"
+        android:onClick="orta"
+        android:text="ORTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kolayButton" />
+
+    <Button
+        android:id="@+id/kolayButton"
+        style="@android:style/Widget.Material.Light.Button"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buton_design"
+        android:onClick="kolay"
+        android:text="KOLAY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <TextView
+        android:id="@+id/oyunTect"
+        android:layout_width="311dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="25dp"
+        android:text="KURU FASÜLYE KAPMACA"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
